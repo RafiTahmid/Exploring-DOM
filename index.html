@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Of Dom</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome To my DOM</h1>
+    </header>
+
+    <main>
+      <h1>My Awesome DOM</h1>
+      <section>
+        <h1>DOM de re Baba</h1>
+        <ul>
+          <li>Jalali Set</li>
+          <li>Shafayet</li>
+          <li>Bonobash</li>
+          <li>DOM de re baba</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Fruits I Like</h1>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Orange</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Places I'd Like To visit</h1>
+        <ul>
+          <li>Sundarban</li>
+          <li>Bandarban</li>
+          <li>Shalbon</li>
+          <li>Katabon</li>
+        </ul>
+      </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script>
+      const liCollection = document.getElementsByTagName("li");
+      // console.log(liCollection);
+
+      for (const li of liCollection) {
+        console.log(li.innerText);
+      }
+
+      const allHeadings = document.getElementsByTagName("h1");
+      for (const h1 of allHeadings) {
+        console.log(h1.innerText);
+      }
+    </script>
+  </body>
+</html>
