@@ -33,7 +33,7 @@
       </section>
       <section>
         <h1>Places I'd Like To visit</h1>
-        <ul>
+        <ul id="places-list">
           <li>Sundarban</li>
           <li>Bandarban</li>
           <li>Shalbon</li>
@@ -42,17 +42,19 @@
       </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/styleInjs.js"></script>
+    <script src="js/append.js"></script>
     <script>
       const liCollection = document.getElementsByTagName("li");
       // console.log(liCollection);
 
       for (const li of liCollection) {
-        console.log(li.innerText);
+        // console.log(li.innerText);
       }
 
       const allHeadings = document.getElementsByTagName("h1");
       for (const h1 of allHeadings) {
-        console.log(h1.innerText);
+        // console.log(h1.innerText);
       }
     </script>
   </body>
